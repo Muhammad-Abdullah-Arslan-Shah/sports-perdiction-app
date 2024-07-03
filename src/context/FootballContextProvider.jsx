@@ -75,7 +75,7 @@ const FootballContextProvider = ({ children }) => {
   };
 
   const fetchMatches = (leaguePath) => {
-    const leagueUrl = `httpss://www.oddsportal.com${leaguePath}`;
+    const leagueUrl = `https://www.oddsportal.com${leaguePath}`;
     setLoading(true);
     axios
       .get(`https://backend-beryl-seven-78.vercel.app/api/scrapeMatches?league=${leagueUrl}`)
