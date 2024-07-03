@@ -33,21 +33,7 @@ const Tablet = ({ children }) => {
     }, 700);
   };
 
-  const handleKeyPress = useCallback((event) => {
-    if (!isVisible && (event.key === 'h' || event.key === 'H')) {
-      console.log("handleKeyPressed")
-      setIsVisible(true);
-      setIsReversing(false);
-      setFetchSport(true);
-    }
-  }, [isVisible, setFetchSport]);
-
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeyPress);
-    return () => {
-      window.removeEventListener('keydown', handleKeyPress);
-    };
-  }, [handleKeyPress]);
+  // Removed handleKeyPress function and associated useEffect
 
   useEffect(() => {
     const handleReload = () => {
