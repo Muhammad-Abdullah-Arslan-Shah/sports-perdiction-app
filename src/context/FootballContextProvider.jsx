@@ -38,7 +38,7 @@ const FootballContextProvider = ({ children }) => {
   const handleLeagueSelect = (leaguePath, leagueLabel) => {
     setSelectedLeagueLable(leagueLabel);
     setSelectedLeague(leaguePath);
-    navigateTo("/matches");
+    navigateTo("/matches");s
     fetchMatches(leaguePath);
   };
 
@@ -46,7 +46,7 @@ const FootballContextProvider = ({ children }) => {
     if (FetchSport) {
       setLoading(true);
       axios
-        .get("http://backend-beryl-seven-78.vercel.app/api/scrapeSports")
+        .get("https://backend-beryl-seven-78.vercel.app/api/scrapeSports")
         .then((response) => {
           setSports(response.data);
         })
@@ -62,7 +62,7 @@ const FootballContextProvider = ({ children }) => {
   const fetchCountries = (sport) => {
     setLoading(true);
     axios
-      .get(`http://backend-beryl-seven-78.vercel.app/api/scrapeCountries?sport=${sport}`)
+      .get(`https://backend-beryl-seven-78.vercel.app/api/scrapeCountries?sport=${sport}`)
       .then((response) => {
         setCountries(response.data);
       })
@@ -75,10 +75,10 @@ const FootballContextProvider = ({ children }) => {
   };
 
   const fetchMatches = (leaguePath) => {
-    const leagueUrl = `https://www.oddsportal.com${leaguePath}`;
+    const leagueUrl = `httpss://www.oddsportal.com${leaguePath}`;
     setLoading(true);
     axios
-      .get(`http://backend-beryl-seven-78.vercel.app/api/scrapeMatches?league=${leagueUrl}`)
+      .get(`https://backend-beryl-seven-78.vercel.app/api/scrapeMatches?league=${leagueUrl}`)
       .then((response) => {
         setMatches(
           response.data.map((match) => ({
@@ -98,7 +98,7 @@ const FootballContextProvider = ({ children }) => {
   const fetchMatchResult = async (matchLink) => {
     try {
       const response = await axios.get(
-        `http://backend-beryl-seven-78.vercel.app/api/scrapeMatchResult?match=${matchLink}`
+        `https://backend-beryl-seven-78.vercel.app/api/scrapeMatchResult?match=${matchLink}`
       );
       const { homeScore, awayScore } = response.data;
       const resultData = {
