@@ -1,11 +1,11 @@
-import React, { useContext, useState, useEffect, useCallback } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import FootballContext from "../context/FootballContext";
 import { useNavigate } from 'react-router-dom';
 
 const Tablet = ({ children }) => {
   let navigate = useNavigate();
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Set to true initially
   const [isReversing, setIsReversing] = useState(false);
   const [shouldRenderChildren, setShouldRenderChildren] = useState(false);
   const { setFetchSport } = useContext(FootballContext);
@@ -33,7 +33,9 @@ const Tablet = ({ children }) => {
     }, 700);
   };
 
-  // Removed handleKeyPress function and associated useEffect
+  useEffect(() => {
+    setFetchSport(true); // Ensure this is called when the component mounts
+  }, [setFetchSport]);
 
   useEffect(() => {
     const handleReload = () => {
