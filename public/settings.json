@@ -1,0 +1,118 @@
+{
+
+    "navLabels": {
+      "appTitle": "Sports Portal",
+      "appLogo":"http://localhost:5173/src/assets/sport logo.jpeg",
+      "freebetLogo":"http://localhost:5173/src/assets/freebet.png",
+      "balanceLogo":"http://localhost:5173/src/assets/balance.png",
+      "homeButton": "Home",
+      "myBetButton": "My Bets",
+      "balanceButton": "Balance",
+     "freeBalanceTooltip": "Free balance",
+     "currentBalanceTooltip": "Current balance"
+     
+    },
+    "countryLabels": {
+      "countryTitle": "Categories",
+      "searchValue":"Search",
+      "navigation":"Select Category",
+       "emptyMsg":"No Categories found.",
+      "populerImg":"http://localhost:5173/src/assets/download.jpeg"
+    },
+    "leagueLabels": {
+      "leagueTitle": "Leagues",
+      "noContentMsg": "No leagues available",
+      "searchValue":"Search",
+       "navigation":"Select League"
+    },
+    "matchLabels": {
+      "matchTitle": "Matches",
+      "noContentMsg": "No Matches to Show",
+      "homeButton": "Home",
+      "awayButton": "Away",
+      "drawButton": "Draw",
+      "maxMatchesError1": "You can only add up to ",
+      "maxMatchesError2":"matches to your bet slip.",
+      "placedBetMsg": "Bet placed on"
+    },
+    "betSlipLabels": {
+      "betSlipTitle": "Bet Slip",
+      "initialUpMsg": "Add your first bet",
+      "initialDownMsg": " You haven't added any selections to the bet slip",
+      "confirmMsg": "Are you sure you want to place the bet?",
+      "amountErrorMsg": "Please enter a valid bet amount",
+      "lowBalanceMsg": "Insufficient balance",
+      "maxMoneyMsg": "The maximum allowable amount for bet is",
+      "potentialEarnings": "Potential Earnings",
+      "placeBetButton": "Place Bet",
+      "homeButton": "Home",
+      "awayButton": "Away",
+      "drawButton": "Draw",
+      "placeholder":"Bet Amount",
+      "successMsg":"You successfully placed your bet!",
+      "freeBalanceLabel": "Use",
+      "matchStartErrorMsg":"Sorry Match is finished, The bet is expire now",
+      "maxBetsMsg":"The maximum allowable bets is"
+    },
+    "myBetsLabels": {
+      "myBetTitle": "My Bets",
+      "sortBy": "Sort by",
+      "sortLatest": "Latest",
+      "sortOldest": "Oldest",
+      "betButton": "Bet",
+      "dateLabel": "Placed On",
+      "amountBet": "Amount Bet",
+      "Odds": "Total Odds",
+      "potentialEarning": "Potential Earnings",
+      "checkButton": "Check Results",
+      "homeButton": "Home",
+      "awayButton": "Away",
+      "drawButton": "Draw",
+     "NoBetsMsg":"You have not placed any Bet"
+    
+    },
+    "resultModalLabels": {
+      "title": "Match Results",
+      "match": "Match",
+      "drawText": "Draw",
+      "homeText": "Home",
+      "awayText": "Away",
+      "notFinishedMsg": "The Matches are Pending",
+      "errorMsg": "An error occurred while fetching.",
+     "lostMsg":"Some of your bets have lost.",
+      "totalWinMsg":"You have won all the bets! Your total win amount is",
+      "yourBet":"Your bet "
+
+    },
+    "confirmationModalLabels": {
+      "title": "Confirm Action",
+      "withdrawConfirmMsg": "Are you sure you want to withdraw",
+      "taxLabel": "Tax",
+      "receiveMsg": "You will receive",
+      "cancelButton": "Cancel",
+      "confirmButton": "Confirm"
+    },
+    "balanceModalLabels": {
+      "title": "Balance",
+      "currentBalance": "Current Balance",
+      "depositButton": "Deposit",
+      "withdrawButton": " Withdraw",
+      "depositConfirm": "Are you sure you want to deposit",
+      "lowBalanceMsg": "Insufficient balance to withdraw",
+      "depositSuccessMsg": "Successfully deposited",
+      "WithdrawSuccessMsg": "Successfully withdrew",
+      "placeholder":"Enter Amount"
+    },
+    "PromoModalLabels": {
+      "title": "Promotional Code",
+      "placeholder":"Enter your promo code",
+       "cancelButton": "Cancel",
+      "confirmButton": "Confirm",
+      "balanceAddedonOnSuccess":1000,
+      "successMsg1":"Promo code accepted!",
+       "successMsg2": "has been added to your free balance.",
+      "errorMsg":"Invalid promo code. Please try again.",
+      "promotionalCode":"1000"
+    }
+  }
+  
