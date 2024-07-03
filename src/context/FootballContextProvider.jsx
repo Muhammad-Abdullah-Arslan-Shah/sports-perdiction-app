@@ -38,7 +38,7 @@ const FootballContextProvider = ({ children }) => {
   const handleLeagueSelect = (leaguePath, leagueLabel) => {
     setSelectedLeagueLable(leagueLabel);
     setSelectedLeague(leaguePath);
-    navigateTo("/matches");s
+    navigateTo("/matches");
     fetchMatches(leaguePath);
   };
 
