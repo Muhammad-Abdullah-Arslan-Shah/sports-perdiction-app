@@ -2,9 +2,9 @@
 
     "navLabels": {
       "appTitle": "Sports Portal",
-      "appLogo":"https://backend-beryl-seven-78.vercel.app/photos/sport logo.jpeg",
-      "freebetLogo":"https://backend-beryl-seven-78.vercel.app/photos/freebet.png",
-      "balanceLogo":"https://backend-beryl-seven-78.vercel.app/photos/balance.png",
+      "appLogo":"https://backend-eepj.vercel.app/photos/sport logo.jpeg",
+      "freebetLogo":"https://backend-eepj.vercel.app/photos/freebet.png",
+      "balanceLogo":"https://backend-eepj.vercel.app/photos/balance.png",
       "homeButton": "Home",
       "myBetButton": "My Bets",
       "balanceButton": "Balance",
@@ -17,7 +17,7 @@
       "searchValue":"Search",
       "navigation":"Select Category",
        "emptyMsg":"No Categories found.",
-      "populerImg":"https://backend-beryl-seven-78.vercel.app/photos/download.jpeg"
+      "populerImg":"https://backend-eepj.vercel.app/photos/download.jpeg"
     },
     "leagueLabels": {
       "leagueTitle": "Leagues",
