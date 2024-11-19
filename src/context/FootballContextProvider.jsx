@@ -46,7 +46,7 @@ const FootballContextProvider = ({ children }) => {
     if (FetchSport) {
       setLoading(true);
       axios
-        .get("https://backend-eepj.vercel.app/api/scrapeSports")
+        .get("https://backend-ten-chi-81.vercel.app/api/scrapeSports")
         .then((response) => {
           setSports(response.data);
         })
@@ -62,7 +62,7 @@ const FootballContextProvider = ({ children }) => {
   const fetchCountries = (sport) => {
     setLoading(true);
     axios
-      .get(`https://backend-eepj.vercel.app/api/scrapeCountries?sport=${sport}`)
+      .get(`https://backend-ten-chi-81.vercel.app/api/scrapeCountries?sport=${sport}`)
       .then((response) => {
         setCountries(response.data);
       })
@@ -78,7 +78,7 @@ const FootballContextProvider = ({ children }) => {
     const leagueUrl = `https://www.oddsportal.com${leaguePath}`;
     setLoading(true);
     axios
-      .get(`https://backend-eepj.vercel.app/api/scrapeMatches?league=${leagueUrl}`)
+      .get(`https://backend-ten-chi-81.vercel.app/api/scrapeMatches?league=${leagueUrl}`)
       .then((response) => {
         setMatches(
           response.data.map((match) => ({
@@ -98,7 +98,7 @@ const FootballContextProvider = ({ children }) => {
   const fetchMatchResult = async (matchLink) => {
     try {
       const response = await axios.get(
-        `https://backend-eepj.vercel.app/api/scrapeMatchResult?match=${matchLink}`
+        `https://backend-ten-chi-81.vercel.app/api/scrapeMatchResult?match=${matchLink}`
       );
       const { homeScore, awayScore } = response.data;
       const resultData = {
